@@ -1,0 +1,27 @@
+main {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.row {
+    clear: both;
+    /*Чтобы ячейки одного рядка не наежджали на второй при разной высоте*/
+}
+
+.column {
+    /*margin: 15px;*/
+    border: 1px solid #888;
+    padding: 15px;
+    width: 33.333%;
+    height: 100px;
+    box-sizing: border-box;
+    float: left;
+    /* прокрутка*/
+    /*overflow-y: auto;*/
+    overflow-y: hidden;
+}
+
+.tovar-block {
+    background-color: blueviolet;
+    height: 100%;
+}
