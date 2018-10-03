@@ -21,9 +21,12 @@ main {
 .tovar-block {
     background-color: beige;
     margin-bottom: 10px;
+    padding: 4px 0 4px 4px;
     -webkit-box-shadow: 7px 6px 9px -2px rgba(115, 115, 103, 0.75);
     -moz-box-shadow: 7px 6px 9px -2px rgba(115, 115, 103, 0.75);
     box-shadow: 7px 6px 9px -2px rgba(115, 115, 103, 0.75);
+    height: 135px;
+    overflow: hidden;
 }
 
 .tovar-block h3 {
@@ -35,11 +38,11 @@ main {
 }
 
 .foto {
-    width: 100px;
+    width: 97px;
     float: left;
-    margin: 3px 5px 4px 3px;
+    margin: 2px 5px 3px 2px;
     /*тень  https://www.cssmatic.com/box-shadow*/
-    box-shadow: 0px 0px 3px 1px rgba(68, 8, 50, 0.4);
+    box-shadow: 0px 0px 3px 1px rgba(68, 38, 50, 0.45);
 }
 
 .price {
