@@ -28,3 +28,25 @@
 .price {
     font-style: italic;
 }
+
+.carousel-control-prev, .carousel-control-next {
+    opacity: 0.2;
+    background-color: #aaa;
+}
+
+/* 
+.carousel-control-prev {
+    left: 20px;
+}
+
+.carousel-control-next {
+    right: 20px;
+} */
+
+.carousel-caption {
+    background-color: rgba(190, 190, 190, 0.5);
+}
+
+.carousel-caption:hover {
+    background-color: rgba(190, 190, 190, 0.9);
+}
