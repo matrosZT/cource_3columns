@@ -13,6 +13,9 @@
     margin: 0 0 7px 0;
 }
 
+.currency-wrapper {
+    position: relative;
+}
 .tovar-block p {
     margin-bottom: 0;
 }

@@ -1,4 +1,4 @@
-/*    
+/*
 */
 /*
 <div class="col-xs-12 col-sm-4">
@@ -7,9 +7,37 @@
 </div>
 */
 var parent = document.getElementById('product-container');
+var exchange = new Exchange();
 
+var selectedCurrElement = document.querySelector('#currency-selector .nav-link');
+var selectedCurrency = {
+    code: 'USD',
+    symbol: '$'
+};
+function OnCurrencyClick(curr) {
+    var symbol;
+    if (selectedCurrency.code == curr) return;
+    var url = selectedUrl;
+    HideProducts();
+    
+    if (curr == 'USD') {
+        selectedCurrency.symbol = '$';
+    }
+    else if (curr == 'UAH') {
+        selectedCurrency.symbol = ' грн.';
+    }
+    selectedCurrency.code = curr;
+
+    selectedCurrElement.innerHTML = (curr + ' ' + selectedCurrency.symbol);
+    if(url)
+        ShowProducts(url);
+    return false;
+}
+
+var selectedUrl;
 function ShowProducts(url) {
     HideProducts();
+    selectedUrl = url;
 
     var xmlhttp = new XMLHttpRequest();
 
@@ -40,7 +68,20 @@ function ShowProducts(url) {
 
                 var span = document.createElement('span');
                 span.className = 'price';
-                span.innerHTML = 'Ціна ' + products[i].price + 'грн.';
+
+                var price = products[i].price;
+
+                if (selectedCurrency.code == 'USD') {
+                    price = price / exchange.USD;
+                }
+                else if (selectedCurrency.code == 'UAH') {
+                    price = price / exchange.UAH;
+                }
+
+                price = price.toFixed(2);
+                price += selectedCurrency.symbol;
+
+                span.innerHTML = 'Ціна ' + price;
                 article.appendChild(span);
 
                 var p = document.createElement('p');
@@ -61,5 +102,6 @@ function ShowProducts(url) {
     xmlhttp.send();
 }
 function HideProducts() {
+    selectedUrl = null;
     parent.innerHTML = '';
 }
