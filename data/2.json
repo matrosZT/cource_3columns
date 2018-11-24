@@ -1,54 +1,54 @@
 [
     {
-        "src": "img/k1.jpg",
-        "hearder": "Broco Capr 2в 1",
+        "src": "img/sp1.jpg",
+        "hearder": "2Broco Capr 2в 1",
         "price": 2560,
         "text": "Broco Capri - это легкая и маневренная коляска за счет алюминиевой рамы."
     },
     {
-        "src": "img/k2.jpg",
+        "src": "img/sp2.jpg",
         "hearder": "Adamex Barletta New",
         "price": 10880,
         "text": "Стильная рама с модной люлькой и прогулкой для ребенка с рождения и до трех лет."
     },
     {
-        "src": "img/k3.jpg",
+        "src": "img/sp3.jpg",
         "hearder": "Bebetto Murano 2 в 1",
         "price": 12480,
         "text": "Усовершенствованная лёгкая система складывания рамы, увеличенный объём сумки и хоз-отсека,натуральный матрас из кокосового волокна."
     },
     {
-        "src": "img/h1.jpg",
+        "src": "img/sp4.jpg",
         "hearder": "Ортопедическая подушка",
         "price": 320,
         "text": "Разработана для правильного развития шейного отдела позвоночника у маленьких детей"
     },
     {
-        "src": "img/h2.png",
+        "src": "img/sp5.jpg",
         "hearder": "Клин\"подушка",
         "price": 500,
         "text": " Подушка исполюзуется детьми во время сна от 1 мес. до 1 года"
     },
     {
-        "src": "img/h2.png",
+        "src": "img/sp6.jpg",
         "hearder": "Babу",
         "price": 280,
         "text": "   Можно совместно использовать с позиционером."
     },
     {
-        "src": "img/k4.jpg",
+        "src": "img/sp7.jpg",
         "hearder": "2 в 1 Adamex Barletta Gel",
         "price": 2560,
         "text": "    Обновленная версия популярной коляски Adamex Barletta"
     },
     {
-        "src": "img/k5.jpg",
+        "src": "img/sp8.jpg",
         "hearder": "коляска для двойни Bebetto 42",
         "price": 17560,
         "text": "   Поворотные передние колеса с системами DMS*"
     },
     {
-        "src": "img/k6.jpg",
+        "src": "img/sp9.jpg",
         "hearder": "EasyGo Fusion Duo",
         "price": 2560,
         "text": "   Поворотные передние колеса с системами DMS*"
